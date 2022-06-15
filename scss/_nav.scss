@@ -1,7 +1,29 @@
 .navbar-default {
   transition: all .5s ease;
+  background-color: transparent;
 
   .navbar-collapse {
     flex-grow: 0;
+  }
+
+  .nav-link {
+    font-weight: bold;
+
+    &.active {
+      color: rgb(20, 140, 70) !important;
+    }
+
+    &:hover {
+      color: #ccc !important;
+    }
+  }
+}
+
+//-----------------change default navbar css
+.navbar-light {
+  .navbar-nav{
+    .nav-link {
+      color: #fff;
+    }
   }
 }
