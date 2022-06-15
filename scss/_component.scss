@@ -1,0 +1,130 @@
+@charset "utf8";
+
+//---------------------
+.page-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+  background: url("../img/common/fv.gif") 0 0 / cover no-repeat;
+  border: 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 43px;
+    font-weight: bold;
+    font-family: $font-oswald;
+    color: #fff;
+
+    @include media-breakpoint-down(md) {
+      font-size: 8vw;
+    }
+  }
+
+  .text-small {
+    font-size: 24px;
+    color: #fff;
+
+    @include media-breakpoint-down(md) {
+      font-size: 5vw;
+    }
+  }
+
+  .scroll-me {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: .7;
+      text-decoration: none;
+    }
+
+    &:before {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      margin: 0 auto;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      transform: rotate(45deg);
+      content: "";
+    }
+  }
+}
+
+//-----------------------------------
+.hover-0 {
+  background: url("../img/common/bg-hover-1.gif") 50% 50% / cover no-repeat;
+
+  .title-section {
+    &,
+    small {
+      color: #9b589c
+    }
+  }
+}
+
+//-----------------------------------
+.hover-1 {
+  background: url("../img/common/bg-hover-2.gif") 50% 50% / cover no-repeat;
+
+  .title-section {
+    &,
+    small {
+      color: #ff2121;
+    }
+  }
+}
+
+//-----------------------------------
+.hover-2 {
+  background: url("../img/common/bg-hover-3.gif") 50% 50% / cover no-repeat;
+
+  .title-section {
+    &,
+    small {
+      color: #333;
+    }
+  }
+}
+
+//-----------------------------------
+.title-black {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: $font-oswald;
+
+  small {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    color: #333;
+  }
+
+  &,
+  small {
+    transition: all .3s ease;
+  }
+}
+
+//-----------------------------------
+.card-info {
+ margin-bottom: 30px;
+}

@@ -1,0 +1,16 @@
+
+// Bootstrap
+//----------------------------------------------
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// other css
+@import "../node_modules/aos/src/sass/aos";
+
+//-------------
+@import "variables";
+@import "index";
+@import "nav";
+@import "component";
+@import "animation";
+@import "section";
+
